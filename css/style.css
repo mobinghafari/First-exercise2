@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    background-color: black;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ravi;
+    src: url(/ravi-vf.woff2);
+}
+
+* {
+    font-family: ravi;
+}
+
+.title {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    font-size: xx-large;
+    display: inline-block;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    border-right: 0.2em solid blue;
+    border-radius: 0.3em;
+    margin: 0 5.5em;
+}
+
+.lists {
+    display: flex;
+    justify-content: center;
+}
+
+
+.lists div {
+    color: rgb(171, 169, 169);
+    margin: 0.5em;
+    width: 15em;
+    height: 15em;
+    background-color: rgba(255, 255, 255, 0.081);
+    border-radius: 2.5em;
+    position: relative;
+    top: 1em;
+    list-style: none;
+    visibility: hidden;
+}
+
+
+.lists div img {
+    display: inline;
+    width: 50px;
+    position: relative;
+    right: 2em;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.lists div span {
+    position: relative;
+    right: 1em;
+    padding: 1em;
+}
+
+.lists div:nth-last-child(2) li span {
+    padding: 3em;
+    margin: 4em 0;
+    border-right: 0.2em solid blue;
+    position: relative;
+    top: 4.5em;
+}
+.lists div:nth-last-child(1) li span {
+    padding: 0.5em;
+    margin: 0.5em 0.5em;
+    position: relative;
+    top: 2em;
+}
+
+.boxes {
+    display: flex;
+    justify-content: center;
+}
+
+
+.boxes div {
+    color: white;
+    margin: 0.5em;
+    width: 15em;
+    height: 15em;
+    background-color: rgba(255, 255, 255, 0.081);
+    border-radius: 2.5em;
+    position: relative;
+    top: 1em;
+}
+
+.boxes div img {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    width: 100px;
+}
+
+.boxes div span {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+/* .links a:last-of-type:hover+section div:nth-last-child(1) {
+    visibility: initial;
+}
+
+.links:hover~div div:nth-last-child(1) {
+    transform: translate(0, 3em);
+    transition: 1.5s;
+} */
+
+.links:hover+section div {
+    visibility: initial;
+}
+
+.links:hover~div div {
+    transform: translate(0, 3em);
+    transition: 1.5s;
+
+}
+
+.login {
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(4, 86, 140) 100%);
+    border: 0;
+    width: 350px;
+    border-radius: 0.5em;
+    padding: 2em;
+    margin: 1em;
+    position: relative;
+    right: 50%;
+    top: 20%;
+    transform: translate(50%, 50%);
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 2.5em 0;
+    border: 0;
+    border-radius: 0.4em;
+    text-align: center;
+    padding: 0.3em;
+}
+
+.login input:focus {
+    outline: none;
+    padding: 0.7em;
+}
+
+.login button {
+    display: inline-block;
+    color: black;
+    background-color: rgba(127, 255, 212, 0);
+    width: 100%;
+    border: 0;
+    border-radius: 0.4em;
+    padding: 0.7em;
+}
+
+#loginButton {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    position: relative;
+    right: 50%;
+    top: 5em;
+    transform: translate(50%, 50%);
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.login::backdrop {
+    background-color: rgba(0, 0, 0, 0.885);
+}
