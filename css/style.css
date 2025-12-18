@@ -22,12 +22,12 @@ body {
     display: inline-block;
 }
 
-.links {
+a {
     display: flex;
     justify-content: center;
 }
 
-.links a {
+a {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -42,7 +42,6 @@ body {
     justify-content: center;
 }
 
-
 .lists div {
     color: rgb(171, 169, 169);
     margin: 0.5em;
@@ -55,7 +54,6 @@ body {
     list-style: none;
     visibility: hidden;
 }
-
 
 .lists div img {
     display: inline;
@@ -79,6 +77,7 @@ body {
     position: relative;
     top: 4.5em;
 }
+
 .lists div:nth-last-child(1) li span {
     padding: 0.5em;
     margin: 0.5em 0.5em;
@@ -90,7 +89,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
 
 .boxes div {
     color: white;
@@ -116,23 +114,49 @@ body {
     top: 2em;
 }
 
-/* .links a:last-of-type:hover+section div:nth-last-child(1) {
+a:nth-last-of-type(1):hover+section div:nth-last-child(1) {
     visibility: initial;
 }
 
-.links:hover~div div:nth-last-child(1) {
+a:nth-last-of-type(1):hover~div div:nth-last-child(1) {
     transform: translate(0, 3em);
     transition: 1.5s;
-} */
+}
 
-.links:hover+section div {
+a:nth-last-of-type(2):hover~section div:nth-last-child(2) {
     visibility: initial;
 }
 
-.links:hover~div div {
+a:nth-last-of-type(2):hover~div div:nth-last-child(2) {
     transform: translate(0, 3em);
     transition: 1.5s;
+}
 
+a:nth-last-of-type(3):hover~section div:nth-last-child(3) {
+    visibility: initial;
+}
+
+a:nth-last-of-type(3):hover~div div:nth-last-child(3) {
+    transform: translate(0, 3em);
+    transition: 1.5s;
+}
+
+a:nth-last-of-type(4):hover~section div:nth-last-child(4) {
+    visibility: initial;
+}
+
+a:nth-last-of-type(4):hover~div div:nth-last-child(4) {
+    transform: translate(0, 3em);
+    transition: 1.5s;
+}
+
+a:nth-last-of-type(5):hover~section div:nth-last-child(5) {
+    visibility: initial;
+}
+
+a:nth-last-of-type(5):hover~div div:nth-last-child(5) {
+    transform: translate(0, 3em);
+    transition: 1.5s;
 }
 
 .login {
