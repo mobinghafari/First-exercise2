@@ -1,7 +1,7 @@
 body {
     margin: 0;
-    background-color: black;
     padding: 0;
+    background-color: black;
 }
 
 @font-face {
@@ -13,28 +13,36 @@ body {
     font-family: ravi;
 }
 
-.title {
-    color: white;
-    width: 100%;
-    text-align: center;
-    padding: 40px;
-    font-size: xx-large;
+.title span {
     display: inline-block;
-}
-
-a {
-    display: flex;
-    justify-content: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.216);
+    font-size: x-large;
+    font-weight: 400;
+    padding: 0.5em 1em;
+    position: relative;
+    right: 50%;
+    transform: translate(50%, 0);
+    top: 0.5em;
+    border-radius: 4em;
+    width: 30%;
+    text-align: center;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
-    color: white;
-    padding: 0.5em;
-    border-right: 0.2em solid blue;
-    border-radius: 0.3em;
-    margin: 0 5.5em;
+    color: rgba(41, 48, 151, 0.656);
+    width: 14.5em;
+    margin: 0.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+    top: 2em;
+    text-align: center;
+}
+
+a:first-of-type {
+    margin-right: 8em;
 }
 
 .lists {
@@ -46,18 +54,17 @@ a {
     color: rgb(171, 169, 169);
     margin: 0.5em;
     width: 15em;
-    height: 15em;
-    background-color: rgba(255, 255, 255, 0.081);
+    height: 13em;
+    background-color: rgba(255, 255, 255, 0.040);
     border-radius: 2.5em;
     position: relative;
-    top: 1em;
+    top: 3em;
     list-style: none;
     visibility: hidden;
 }
 
 .lists div img {
-    display: inline;
-    width: 50px;
+    width: 34px;
     position: relative;
     right: 2em;
     padding: 1em;
@@ -71,18 +78,18 @@ a {
 }
 
 .lists div:nth-last-child(2) li span {
-    padding: 3em;
-    margin: 4em 0;
-    border-right: 0.2em solid blue;
+    padding: 1em;
+    margin: 1em;
+    border-right: 0.1em solid rgba(0, 0, 255, 0.438);
     position: relative;
-    top: 4.5em;
+    top: 3.5em;
 }
 
 .lists div:nth-last-child(1) li span {
     padding: 0.5em;
     margin: 0.5em 0.5em;
     position: relative;
-    top: 2em;
+    top: 3em;
 }
 
 .boxes {
@@ -91,14 +98,14 @@ a {
 }
 
 .boxes div {
-    color: white;
+    color: rgba(255, 255, 255, 0.704);
     margin: 0.5em;
     width: 15em;
-    height: 15em;
-    background-color: rgba(255, 255, 255, 0.081);
+    height: 13em;
+    background-color: rgba(255, 255, 255, 0.040);
     border-radius: 2.5em;
     position: relative;
-    top: 1em;
+    top: 2.5em;
 }
 
 .boxes div img {
@@ -118,59 +125,63 @@ a:nth-last-of-type(1):hover+section div:nth-last-child(1) {
     visibility: initial;
 }
 
-a:nth-last-of-type(1):hover~div div:nth-last-child(1) {
-    transform: translate(0, 3em);
-    transition: 1.5s;
+a:nth-of-type(5):hover~div div:nth-of-type(5) {
+    transform: translate(0, 2em);
+    transition: 0.7s;
+    border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(2):hover~section div:nth-last-child(2) {
     visibility: initial;
 }
 
-a:nth-last-of-type(2):hover~div div:nth-last-child(2) {
-    transform: translate(0, 3em);
-    transition: 1.5s;
+a:nth-of-type(4):hover~div div:nth-of-type(4) {
+    transform: translate(0, 1em);
+    transition: 0.7s;
+    border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(3):hover~section div:nth-last-child(3) {
     visibility: initial;
 }
 
-a:nth-last-of-type(3):hover~div div:nth-last-child(3) {
-    transform: translate(0, 3em);
-    transition: 1.5s;
+a:nth-of-type(3):hover~div div:nth-of-type(3) {
+    transform: translate(0, 1em);
+    transition: 0.7s;
+    border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(4):hover~section div:nth-last-child(4) {
     visibility: initial;
 }
 
-a:nth-last-of-type(4):hover~div div:nth-last-child(4) {
-    transform: translate(0, 3em);
-    transition: 1.5s;
+a:nth-of-type(2):hover~div div:nth-of-type(2) {
+    transform: translate(0, 1em);
+    transition: 0.7s;
+    border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(5):hover~section div:nth-last-child(5) {
     visibility: initial;
 }
 
-a:nth-last-of-type(5):hover~div div:nth-last-child(5) {
-    transform: translate(0, 3em);
-    transition: 1.5s;
+a:nth-of-type(1):hover~div div:nth-of-type(1) {
+    transform: translate(0, 1em);
+    transition: 0.7s;
+    border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 .login {
-    background: #020024;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(4, 86, 140) 100%);
-    border: 0;
     width: 350px;
-    border-radius: 0.5em;
+    border: 0;
+    border-radius: 0.6em;
     padding: 2em;
     margin: 1em;
     position: relative;
     right: 50%;
-    top: 20%;
-    transform: translate(50%, 50%);
+    top: 50%;
+    transform: translate(50%, -50%);
 }
 
 .login input {
@@ -201,17 +212,14 @@ a:nth-last-of-type(5):hover~div div:nth-last-child(5) {
 
 #loginButton {
     display: inline-block;
-    color: rgb(0, 0, 0);
+    color: blue;
     position: relative;
     right: 50%;
     top: 5em;
     transform: translate(50%, 50%);
-    width: 300px;
-    height: 30px;
-    background-color: white;
-    text-align: center;
 }
 
 .login::backdrop {
-    background-color: rgba(0, 0, 0, 0.885);
+    background-color: rgba(0, 0, 0, 0.907);
+
 }
