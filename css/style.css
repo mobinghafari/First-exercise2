@@ -2,47 +2,51 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@font-face {
+/* @font-face {
     font-family: ravi;
-    src: url(/ravi-vf.woff2);
+    src: url('./fonts/ravi-vf.woff2');
 }
 
 * {
     font-family: ravi;
-}
+} */
 
 .title span {
     display: inline-block;
     color: white;
-    background-color: rgba(255, 255, 255, 0.216);
-    font-size: x-large;
+    background-color: rgba(0, 0, 139, 0.259);
+    font-size: xx-large;
     font-weight: 400;
     padding: 0.5em 1em;
     position: relative;
     right: 50%;
     transform: translate(50%, 0);
     top: 0.5em;
-    border-radius: 4em;
+    border-radius: 2em;
     width: 30%;
     text-align: center;
+    font-family: 'Times New Roman';
 }
 
 a {
     display: inline-block;
     text-decoration: none;
-    color: rgba(41, 48, 151, 0.656);
+    color: rgb(255, 255, 255);
     width: 14.5em;
     margin: 0.5em;
-    padding-bottom: 0.5em;
+    /* padding-bottom: 0.5em; */
     position: relative;
     top: 2em;
     text-align: center;
+    background-color: rgba(38, 38, 37, 0.437);
+    border-radius: 4px;
 }
 
 a:first-of-type {
-    margin-right: 8em;
+    margin-right: 9.5em;
 }
 
 .lists {
@@ -51,36 +55,38 @@ a:first-of-type {
 }
 
 .lists div {
-    color: rgb(171, 169, 169);
+    /* color: rgb(0, 0, 0); */
     margin: 0.5em;
     width: 15em;
     height: 13em;
-    background-color: rgba(255, 255, 255, 0.040);
+    background-color: rgba(0, 0, 0, 0.04);
     border-radius: 2.5em;
     position: relative;
     top: 3em;
     list-style: none;
     visibility: hidden;
+    /* transition: 0.7s; */
 }
 
 .lists div img {
-    width: 34px;
+    width: 35px;
     position: relative;
     right: 2em;
     padding: 1em;
     vertical-align: middle;
+    opacity: 0.4;
 }
 
 .lists div span {
     position: relative;
     right: 1em;
     padding: 1em;
+    font-size: smaller;
 }
 
 .lists div:nth-last-child(2) li span {
-    padding: 1em;
-    margin: 1em;
-    border-right: 0.1em solid rgba(0, 0, 255, 0.438);
+    padding: 2em;
+    /* margin: 0 1.5em 0 0; */
     position: relative;
     top: 3.5em;
 }
@@ -98,7 +104,7 @@ a:first-of-type {
 }
 
 .boxes div {
-    color: rgba(255, 255, 255, 0.704);
+    color: rgba(255, 255, 255, 0.647);
     margin: 0.5em;
     width: 15em;
     height: 13em;
@@ -106,16 +112,19 @@ a:first-of-type {
     border-radius: 2.5em;
     position: relative;
     top: 2.5em;
+    transition: 0.7s;
 }
 
 .boxes div img {
     position: absolute;
     left: 5px;
     bottom: 5px;
-    width: 100px;
+    width: 80px;
+    opacity: 0.7;
 }
 
 .boxes div span {
+    font-size: 15px;
     position: absolute;
     right: 2em;
     top: 2em;
@@ -123,51 +132,66 @@ a:first-of-type {
 
 a:nth-last-of-type(1):hover+section div:nth-last-child(1) {
     visibility: initial;
+    transition: 1.3s;
+    background-color: rgba(255, 255, 255, 0.045);
+    color: aliceblue;
 }
 
 a:nth-of-type(5):hover~div div:nth-of-type(5) {
     transform: translate(0, 2em);
-    transition: 0.7s;
+    /* transition: 0.7s; */
     border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(2):hover~section div:nth-last-child(2) {
     visibility: initial;
+    transition: 1.3s;
+    background-color: rgba(255, 255, 255, 0.045);
+    color: aliceblue;
 }
 
 a:nth-of-type(4):hover~div div:nth-of-type(4) {
     transform: translate(0, 1em);
-    transition: 0.7s;
+    /* transition: 0.7s; */
     border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(3):hover~section div:nth-last-child(3) {
     visibility: initial;
+    transition: 1.3s;
+    background-color: rgba(255, 255, 255, 0.045);
+    color: aliceblue;
 }
 
 a:nth-of-type(3):hover~div div:nth-of-type(3) {
     transform: translate(0, 1em);
-    transition: 0.7s;
+    /* transition: 0.7s; */
     border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(4):hover~section div:nth-last-child(4) {
     visibility: initial;
+    transition: 1.3s;
+    background-color: rgba(255, 255, 255, 0.045);
+    color: aliceblue;
 }
 
 a:nth-of-type(2):hover~div div:nth-of-type(2) {
     transform: translate(0, 1em);
-    transition: 0.7s;
+    /* transition: 0.7s; */
     border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
 a:nth-last-of-type(5):hover~section div:nth-last-child(5) {
     visibility: initial;
+    transition: 1.3s;
+    background-color: rgba(255, 255, 255, 0.045);
+    color: aliceblue;
 }
 
 a:nth-of-type(1):hover~div div:nth-of-type(1) {
     transform: translate(0, 1em);
-    transition: 0.7s;
+    /* transition: 0.7s; */
     border-top: 2px solid rgba(0, 0, 255, 0.623);
 }
 
@@ -221,5 +245,4 @@ a:nth-of-type(1):hover~div div:nth-of-type(1) {
 
 .login::backdrop {
     background-color: rgba(0, 0, 0, 0.907);
-
 }
